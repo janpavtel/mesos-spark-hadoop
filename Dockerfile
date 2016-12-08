@@ -1,4 +1,4 @@
-FROM mesosphere/spark:1.0.6-2.0.2-hadoop-2.6
+FROM mesosphere/spark:1.0.4-2.0.1
 
 WORKDIR /opt/spark/dist
 
