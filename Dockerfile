@@ -6,6 +6,8 @@ ENV SPARK_SHUFFLE_OPTS "-Dspark.shuffle.service.enabled=true"
 
 ENV SPARK_PRINT_LAUNCH_COMMAND "true"
 
+ENV SPARK_LOCAL_DIRS "/tmp"
+
 ENTRYPOINT ["./bin/spark-class", "org.apache.spark.deploy.mesos.MesosExternalShuffleService"]
 
 
